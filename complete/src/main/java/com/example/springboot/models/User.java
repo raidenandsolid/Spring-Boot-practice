@@ -20,15 +20,19 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
-    private final String name;
+    private final String firstName;
+    private final String lastName;
     private final String email;
+    private final String title;
 
 
     @ToString()
     @Data(staticConstructor = "of")
     public static class UserConstructor<T> {
-        private final String name;
-        private final T value;
+        private final String firstName;
+        private final String lastName;
+        private final String email;
+        private final String title;
 
     }
 }
