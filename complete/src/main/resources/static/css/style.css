@@ -54,6 +54,32 @@ img {
    padding: 4px;
    margin-top: -4px;
  }
+
+.modal {
+    display:    none;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 255, 255, 255, .8 )
+    url('http://i.stack.imgur.com/FhHRx.gif')
+    50% 50%
+    no-repeat;
+}
+
+/* When the body has the loading class, we turn
+   the scrollbar off with overflow:hidden */
+body.loading .modal {
+    overflow: hidden;
+}
+
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+body.loading .modal {
+    display: block;
+}
  
  button {
    padding: 5px 15px;
@@ -74,3 +100,15 @@ img {
      padding-left: 0;
    }
  }
+
+#page-loader {
+    position:fixed!important;
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    z-index:999999;
+    background:#f99e47 url(https://dribbble.com/shots/2715285-Triangle-Preloader/attachments/9445867?mode=media) no-repeat 50% 50%;
+    padding:1em 1.2em;
+    display:none}
