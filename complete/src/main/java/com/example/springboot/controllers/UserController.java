@@ -15,7 +15,6 @@ public class UserController {
                             @RequestParam("email") String email,
                             @RequestParam("title") String title) {
         User usr = new User(firstName, lastName, email, title);
-        // User usr2 = new User("Johnson", "reyrey@rey.com", "Mrs.");
 		return usr.getTitle() + " " + usr.getFirstName() + " " + usr.getLastName() + " " + usr.getEmail();
 	}
 

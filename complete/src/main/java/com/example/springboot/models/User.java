@@ -31,7 +31,7 @@ public class User {
     public static class UserConstructor<T> {
         private final String firstName;
         private final String lastName;
-        private final T value;
+        private final String email;
         private final String title;
 
     }
