@@ -1,4 +1,4 @@
-*.DS_Store
+git*.DS_Store
 *.sw?
 .#*
 *#
@@ -16,3 +16,4 @@ dependency-reduced-pom.xml
 README.html
 .idea
 *.iml
+/complete/src/main/resources/application.properties
